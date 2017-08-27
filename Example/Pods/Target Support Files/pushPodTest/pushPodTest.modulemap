@@ -1,0 +1,6 @@
+framework module pushPodTest {
+  umbrella header "pushPodTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
