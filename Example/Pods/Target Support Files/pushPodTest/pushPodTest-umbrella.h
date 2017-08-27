@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "Aiyy.pbobjc.h"
+#import "SGSpeechRecognizer.h"
 
 FOUNDATION_EXPORT double pushPodTestVersionNumber;
 FOUNDATION_EXPORT const unsigned char pushPodTestVersionString[];

@@ -102,9 +102,23 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/pushPodTest/pushPodTest.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/pushPodTest/pushPodTest.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
