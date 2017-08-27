@@ -39,4 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'Protobuf', '~> 3.4.0'
+  s.dependency 'gRPC-ProtoRPC', '~> 1.4.2'
 end
